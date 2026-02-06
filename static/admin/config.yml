@@ -2,6 +2,8 @@ backend:
   name: github
   repo: alixdeschamps/avion-pedales
   branch: main
+  base_url: https://alixdeschamps.github.io
+  site_domain: alixdeschamps.github.io
 
 media_folder: "static/images"
 public_folder: "/images"
