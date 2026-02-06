@@ -10,10 +10,10 @@
 </head>
 <body>
     <nav>
-        <a href="{{ "/" | relURL }}" class="nav-logo">Avion a Pedales</a>
+        <a href="{{ "" | absURL }}" class="nav-logo">Avion a Pedales</a>
         <div class="nav-links">
-            <a href="{{ "/" | relURL }}">Accueil</a>
-            <a href="{{ "/blog/" | relURL }}">Blog</a>
+            <a href="{{ "" | absURL }}">Accueil</a>
+            <a href="{{ "blog/" | absURL }}">Blog</a>
             <a href="{{ .Site.Params.instagram }}" target="_blank">Instagram</a>
         </div>
     </nav>

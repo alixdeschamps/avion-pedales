@@ -17,7 +17,7 @@
 
     <nav class="post-nav">
         {{ with .PrevInSection }}<a href="{{ .RelPermalink }}">&larr; {{ .Title }}</a>{{ end }}
-        <a href="{{ "/blog/" | relURL }}">Tous les articles</a>
+        <a href="{{ "blog/" | absURL }}">Tous les articles</a>
         {{ with .NextInSection }}<a href="{{ .RelPermalink }}">{{ .Title }} &rarr;</a>{{ end }}
     </nav>
 </article>
