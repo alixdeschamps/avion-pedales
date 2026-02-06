@@ -1,6 +1,6 @@
 media:
   input: static/images
-  output: /images
+  output: /avion-pedales/images
 
 content:
   - name: blog
