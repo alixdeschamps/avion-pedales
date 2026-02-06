@@ -1,0 +1,43 @@
+baseURL = "https://alixdeschamps.github.io/avion-pedales/"
+languageCode = "fr"
+title = "Avion a Pedales"
+theme = ""
+
+[params]
+  bio = "Goal: bike rides in the sky"
+  description = "Un vehicule hybride entre velo electrique et ULM. Sobre, low-tech et contemplatif."
+  instagram = "https://www.instagram.com/avionapedales/"
+  patreon = "https://www.patreon.com/alixcool"
+  youtube = ""
+  model3d = ""
+  statusDate = "Juillet 2025"
+  statusText = "Le banc d'essai V2 a atteint une poussee suffisante pour le decollage. Prochaine etape : construction des ailes."
+
+[params.links]
+  [params.links.patreon]
+    title = "Soutenir le projet"
+    url = "https://www.patreon.com/alixcool"
+    icon = "heart"
+  [params.links.job]
+    title = "On recrute un associe mecanique"
+    url = "#"
+    icon = "wrench"
+  [params.links.video]
+    title = "Le projet en 2 minutes"
+    url = "#"
+    icon = "play"
+  [params.links.model]
+    title = "Modele 3D interactif (v0.1)"
+    url = "#"
+    icon = "cube"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[outputs]
+  home = ["HTML"]
+
+[pagination]
+  pagerSize = 10

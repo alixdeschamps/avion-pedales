@@ -1,0 +1,25 @@
+{{ define "main" }}
+
+<article class="blog-post">
+    <header class="post-header">
+        <time>{{ .Date.Format "2 January 2006" }}</time>
+        <h1>{{ .Title }}</h1>
+        {{ with .Params.tags }}
+        <div class="blog-tags">
+            {{ range . }}<span class="tag">{{ . }}</span>{{ end }}
+        </div>
+        {{ end }}
+    </header>
+
+    <div class="post-content">
+        {{ .Content }}
+    </div>
+
+    <nav class="post-nav">
+        {{ with .PrevInSection }}<a href="{{ .RelPermalink }}">&larr; {{ .Title }}</a>{{ end }}
+        <a href="{{ "/blog/" | relURL }}">Tous les articles</a>
+        {{ with .NextInSection }}<a href="{{ .RelPermalink }}">{{ .Title }} &rarr;</a>{{ end }}
+    </nav>
+</article>
+
+{{ end }}

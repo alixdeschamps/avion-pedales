@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Engineering on Avion a Pedales</title>
+    <link>http://localhost:1313/avion-pedales/tags/engineering/</link>
+    <description>Recent content in Engineering on Avion a Pedales</description>
+    <generator>Hugo</generator>
+    <language>fr</language>
+    <lastBuildDate>Tue, 15 Jul 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/avion-pedales/tags/engineering/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Le banc d&#39;essai V2 atteint la poussee de decollage</title>
+      <link>http://localhost:1313/avion-pedales/blog/banc-essai-v2/</link>
+      <pubDate>Tue, 15 Jul 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/avion-pedales/blog/banc-essai-v2/</guid>
+      <description>Apres des mois de travail, le banc d&amp;rsquo;essai V2 a enfin atteint une poussee suffisante pour le decollage. Retour sur les tests.</description>
+    </item>
+  </channel>
+</rss>

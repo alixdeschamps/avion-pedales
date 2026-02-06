@@ -1,0 +1,27 @@
+{{ define "main" }}
+
+<section class="blog-list-page">
+    <h1>Blog</h1>
+    <p class="blog-subtitle">Carnets de bord du projet avion a pedales</p>
+
+    <div class="blog-list">
+        {{ range .Pages }}
+        <a href="{{ .RelPermalink }}" class="blog-entry">
+            <time>{{ .Date.Format "2 Jan 2006" }}</time>
+            <h2>{{ .Title }}</h2>
+            {{ if .Params.summary }}
+            <p>{{ .Params.summary }}</p>
+            {{ else }}
+            <p>{{ .Summary }}</p>
+            {{ end }}
+            {{ with .Params.tags }}
+            <div class="blog-tags">
+                {{ range . }}<span class="tag">{{ . }}</span>{{ end }}
+            </div>
+            {{ end }}
+        </a>
+        {{ end }}
+    </div>
+</section>
+
+{{ end }}

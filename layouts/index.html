@@ -1,0 +1,72 @@
+{{ define "main" }}
+
+<!-- HERO -->
+<section class="hero">
+    <div class="hero-avatar">
+        <img src="{{ "images/avatar.jpg" | relURL }}" alt="Avion a Pedales" onerror="this.style.display='none'">
+    </div>
+    <h1>Avion a Pedales</h1>
+    <p class="hero-bio">{{ .Site.Params.bio }}</p>
+    <p class="hero-desc">{{ .Site.Params.description }}</p>
+</section>
+
+<!-- BENTO GRID -->
+<section class="bento">
+
+    <!-- Status update -->
+    <div class="bento-card bento-status">
+        <div class="card-label">Status — {{ .Site.Params.statusDate }}</div>
+        <p>{{ .Site.Params.statusText }}</p>
+    </div>
+
+    <!-- Links -->
+    <a href="{{ .Site.Params.links.patreon.url }}" class="bento-card bento-link" target="_blank">
+        <span class="link-icon">&#9829;</span>
+        <span>{{ .Site.Params.links.patreon.title }}</span>
+        <span class="arrow">&rarr;</span>
+    </a>
+
+    <a href="{{ .Site.Params.links.video.url }}" class="bento-card bento-link">
+        <span class="link-icon">&#9654;</span>
+        <span>{{ .Site.Params.links.video.title }}</span>
+        <span class="arrow">&rarr;</span>
+    </a>
+
+    <a href="{{ .Site.Params.links.model.url }}" class="bento-card bento-link">
+        <span class="link-icon">&#9878;</span>
+        <span>{{ .Site.Params.links.model.title }}</span>
+        <span class="arrow">&rarr;</span>
+    </a>
+
+    <a href="{{ .Site.Params.links.job.url }}" class="bento-card bento-link bento-highlight">
+        <span class="link-icon">&#9881;</span>
+        <span>{{ .Site.Params.links.job.title }}</span>
+        <span class="arrow">&rarr;</span>
+    </a>
+
+    <!-- Instagram embed placeholder -->
+    <div class="bento-card bento-instagram">
+        <div class="card-label">Instagram — @avionapedales</div>
+        <div class="insta-grid">
+            <div class="insta-placeholder"></div>
+            <div class="insta-placeholder"></div>
+            <div class="insta-placeholder"></div>
+            <div class="insta-placeholder"></div>
+        </div>
+    </div>
+
+    <!-- Latest blog posts -->
+    <div class="bento-card bento-blog">
+        <div class="card-label">Derniers articles</div>
+        {{ range first 3 (where .Site.RegularPages "Section" "blog") }}
+        <a href="{{ .RelPermalink }}" class="bento-blog-item">
+            <span class="blog-item-date">{{ .Date.Format "Jan 2006" }}</span>
+            <span class="blog-item-title">{{ .Title }}</span>
+        </a>
+        {{ end }}
+        <a href="{{ "/blog/" | relURL }}" class="bento-blog-more">Tous les articles &rarr;</a>
+    </div>
+
+</section>
+
+{{ end }}

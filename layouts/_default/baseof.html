@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ if not .IsHome }}{{ .Title }} — {{ end }}{{ .Site.Title }}</title>
+    <link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <a href="{{ "/" | relURL }}" class="nav-logo">Avion a Pedales</a>
+        <div class="nav-links">
+            <a href="{{ "/" | relURL }}">Accueil</a>
+            <a href="{{ "/blog/" | relURL }}">Blog</a>
+            <a href="{{ .Site.Params.instagram }}" target="_blank">Instagram</a>
+        </div>
+    </nav>
+
+    <main>
+        {{ block "main" . }}{{ end }}
+    </main>
+
+    <footer>
+        &copy; {{ now.Year }} Avion a Pedales &mdash; Built with Hugo, hosted on GitHub Pages
+    </footer>
+</body>
+</html>
