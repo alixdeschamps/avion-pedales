@@ -1,20 +1,11 @@
 ---
-title: Le banc d'essai V2 atteint la poussee de decollageqqqq
-date: 2025-07-15
-tags:
-  - engineering
-  - milestone
+title: Construction du banc de test
+date: 2023-01-28
 summary: Apres des mois de travail, le banc d'essai V2 a enfin atteint une
   poussee suffisante pour le decollage. Retour sur les tests.
 ---
-Apres des mois de travail, le banc d'essai V2 a enfin atteint une poussee suffisante pour le decollage.
+Voici un petit coup d’oeil à la construction du banc de test. Première étape: la structure en bois qui servira de support à tous les éléments importants : pédales, moteur, hélice, batterie.
 
-## Les chiffres
+Pour la construire, je m’inspire grandement du banc de test conçu par Alec, un ingénieur américain qui a fabriqué le [DaSH](https://en.m.wikipedia.org/wiki/DaSH_PA), un avion à pédales (sans assistance électrique). Voici sa version:
 
-Le systeme de propulsion hybride (pedales + assistance electrique) genere maintenant assez de poussee pour soulever la structure prevue de l'appareil.
-
-## Prochaines etapes
-
-La prochaine grande etape est la construction des ailes. C'est un defi majeur : elles doivent etre assez legeres pour ne pas plomber le ratio poussee/poids, mais assez solides pour supporter les charges en vol.
-
-> Ce post est un exemple. Remplace-le par ton vrai contenu exporte depuis Patreon.
+![](/images/test%20rig%201.jpg)
