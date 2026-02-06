@@ -11,8 +11,4 @@ Si l'on souhaite voler plus vite, plus loin, plus haut on ajoutera une assistanc
 
 La première étape de notre aventure consiste à créer un **banc de test**. Cette structure en  bois permettra de valider les éléments clés (pédalier, moteur, batterie, hélice) et de s'assurer qu'on arrivera à générer la force en avant (appelée poussée) nécessaire pour faire décoller l'avion. Je vous épargne les grandes feuilles excel par lesquelles je suis passé mais sachez que la poussée nécessaire dépend entre autre du poids de l'avion, de la forme et taille de ses ailes.
 
-Voici le banc de test de Alec Proudfoot qui m'a servi d'inspiration :
-
-![](/avion-pedales/images/test%20rig%201.jpg)
-
 Dans le prochain épisode je vous montre la construction du banc de test. A toute!
