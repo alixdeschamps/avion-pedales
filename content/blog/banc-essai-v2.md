@@ -1,10 +1,12 @@
 ---
-title: "Le banc d'essai V2 atteint la poussee de decollage"
+title: Le banc d'essai V2 atteint la poussee de decollageqqqq
 date: 2025-07-15
-tags: ["engineering", "milestone"]
-summary: "Apres des mois de travail, le banc d'essai V2 a enfin atteint une poussee suffisante pour le decollage. Retour sur les tests."
+tags:
+  - engineering
+  - milestone
+summary: Apres des mois de travail, le banc d'essai V2 a enfin atteint une
+  poussee suffisante pour le decollage. Retour sur les tests.
 ---
-
 Apres des mois de travail, le banc d'essai V2 a enfin atteint une poussee suffisante pour le decollage.
 
 ## Les chiffres
