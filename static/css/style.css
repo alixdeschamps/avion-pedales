@@ -345,6 +345,10 @@ nav {
     margin-bottom: 16px;
 }
 
+.post-content > div:has(> iframe) {
+    margin-bottom: 16px;
+}
+
 .post-content img {
     max-width: 100%;
     border-radius: 12px;
