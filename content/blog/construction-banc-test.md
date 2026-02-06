@@ -1,8 +1,7 @@
 ---
 title: Construction du banc de test
 date: 2023-01-28
-summary: Apres des mois de travail, le banc d'essai V2 a enfin atteint une
-  poussee suffisante pour le decollage. Retour sur les tests.
+summary: Retour sur le banc de test avant de se lancer
 ---
 {{< youtube W-fRTECKGXs >}}
 
