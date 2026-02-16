@@ -3,7 +3,7 @@ title: "Première étape : le banc de test"
 date: 2023-01-19
 summary: Il faut bien commencer quelque part
 ---
-![](/avion-pedales/images/IMG_8201.jpg)
+![](/images/IMG_8201.jpg)
 
 Le principe d'un avion à pédale est très simple. Pour voler, il faut pédaler. Regardons ce schéma méga simplifié : lorsque je pédale, le pédalier entraîne une hélice qui, en tournant, génère une force vers l'avant. Cette force, couplée à des ailes orientées de la bonne façon nous permettra de décoller et de voler. 
 

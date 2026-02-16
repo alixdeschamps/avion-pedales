@@ -9,4 +9,4 @@ Voici un petit coup d'oeil à la construction du banc de test. Première étape:
 
 Pour la construire, je m’inspire grandement du banc de test conçu par Alec, un ingénieur américain qui a fabriqué le [DaSH](https://en.m.wikipedia.org/wiki/DaSH_PA), un avion à pédales (sans assistance électrique). Voici sa version:
 
-![](/avion-pedales/images/test%20rig%201.jpg)
+![](/images/test%20rig%201.jpg)
