@@ -12,9 +12,12 @@
     <nav>
         <a href="{{ "" | absURL }}" class="nav-logo">Avion a Pedales</a>
         <div class="nav-links">
-            <a href="{{ "" | absURL }}">Accueil</a>
+            <a href="{{ "" | absURL }}" class="nav-home">Accueil</a>
             <a href="{{ "blog/" | absURL }}">Blog</a>
-            <a href="{{ .Site.Params.instagram }}" target="_blank">Instagram</a>
+            <a href="{{ .Site.Params.instagram }}" target="_blank" class="nav-insta">
+                <span class="nav-insta-text">Instagram</span>
+                <svg class="nav-insta-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
         </div>
     </nav>
 

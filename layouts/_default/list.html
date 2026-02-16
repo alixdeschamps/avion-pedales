@@ -7,13 +7,26 @@
     <div class="blog-list">
         {{ range .Pages }}
         <a href="{{ .RelPermalink }}" class="blog-entry">
+            {{/* Extract YouTube video ID or image from raw content */}}
+            {{ $ytMatch := findRE `youtube\s+[a-zA-Z0-9_-]+` .RawContent 1 }}
+            {{ $imgMatch := findRE `!\[.*?\]\([^)]+\)` .RawContent 1 }}
+            {{ if $ytMatch }}
+                {{ $videoID := replaceRE `^youtube\s+` "" (index $ytMatch 0) }}
+                <div class="blog-entry-media">
+                    <img src="https://img.youtube.com/vi/{{ $videoID }}/hqdefault.jpg" alt="{{ .Title }}" loading="lazy">
+                    <span class="blog-entry-play"></span>
+                </div>
+            {{ else if $imgMatch }}
+                {{ $raw := index $imgMatch 0 }}
+                {{ $imgURL := replaceRE `^!\[.*?\]\(` "" $raw }}
+                {{ $imgURL = replaceRE `\)$` "" $imgURL }}
+                <div class="blog-entry-media">
+                    <img src="{{ $imgURL }}" alt="{{ .Title }}" loading="lazy">
+                </div>
+            {{ end }}
             <time>{{ .Date.Format "2 Jan 2006" }}</time>
             <h2>{{ .Title }}</h2>
-            {{ if .Params.summary }}
-            <p>{{ .Params.summary }}</p>
-            {{ else }}
-            <p>{{ .Summary }}</p>
-            {{ end }}
+            <p>{{ .Plain | htmlUnescape | truncate 200 }}</p>
             {{ with .Params.tags }}
             <div class="blog-tags">
                 {{ range . }}<span class="tag">{{ . }}</span>{{ end }}
