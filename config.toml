@@ -4,14 +4,15 @@ title = "Avion a Pedales"
 theme = ""
 
 [params]
-  bio = "Goal: bike rides in the sky"
-  description = "Un vehicule hybride entre velo electrique et ULM. Sobre, low-tech et contemplatif."
+  bio = "🎯 Faire des randos vélo dans le ciel"
+  description = "Je construis un véhicule hybride entre vélo electrique et ULM. Je le souhaite sobre, low-tech et contemplatif."
   instagram = "https://www.instagram.com/avionapedales/"
   patreon = "https://www.patreon.com/alixcool"
   youtube = ""
+  videoEmbed = "https://www.youtube.com/embed/72-GKUz-6ZY?rel=0"
   model3d = ""
   statusDate = "Juillet 2025"
-  statusText = "Le banc d'essai V2 a atteint une poussee suffisante pour le decollage. Prochaine etape : construction des ailes."
+  statusText = "Le banc d'essai V2 a atteint une poussee suffisante pour le décollage. Prochaine étape : construction des ailes."
 
 [params.links]
   [params.links.patreon]
@@ -19,16 +20,16 @@ theme = ""
     url = "https://www.patreon.com/alixcool"
     icon = "heart"
   [params.links.job]
-    title = "On recrute un associe mecanique"
-    url = "#"
+    title = "Recrute associé.e mécano"
+    url = "https://jobs.makesense.org/fr/jobs/avion-a-pedales-associee-mecano-avion-a-pedales-d0tInv6bzBmYiOM7Jy4r"
     icon = "wrench"
   [params.links.video]
     title = "Le projet en 2 minutes"
     url = "#"
     icon = "play"
   [params.links.model]
-    title = "Modele 3D interactif (v0.1)"
-    url = "#"
+    title = "Modèle 3D (v0.1)"
+    url = "https://gmail1680791.autodesk360.com/g/shares/SH286ddQT78850c0d8a42219621574419ef1"
     icon = "cube"
 
 [markup]
